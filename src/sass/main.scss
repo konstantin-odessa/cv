@@ -1,0 +1,35 @@
+// mixins
+
+@mixin lineOnSides() {
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    top: 0;
+    width: 9999px;
+  }
+  &:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  &:after {
+    left: 100%;
+    margin-right: 15px;
+  }
+}
+
+
+/* Layout */
+
+.flexbox {
+  display: flex;
+}
+
+.cv-container
+
+.cv-block-content {
+
+}
+

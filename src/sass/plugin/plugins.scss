@@ -1,0 +1,39 @@
+.slider__container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__slides-wrapper {
+  position: relative;
+  left: 0;
+  transition: left .5s ease-in-out;
+}
+
+.slider__slide-item {
+  float: left;
+}
+
+
+.fade__content-container {
+  position: relative;
+  overflow: hidden;
+  //height: 300px;
+  /* width: 600px; */
+}
+
+.fade__content-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity .6s ease-in-out;
+}
+
+.fade__content-item.active {
+  position: relative;
+  opacity: 1;
+}

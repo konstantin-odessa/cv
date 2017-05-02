@@ -1,0 +1,31 @@
+@import "icomoon-icons";
+
+@include icon-classes;
+
+[class^="icon-"] {
+  margin: 0em .1em;
+  padding: .3em .3em;
+  display: inline-block;
+  vertical-align: middle;
+  &:before {
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.icon-vk {
+  color: #4C75A3;
+}
+
+.icon-gmail {
+  color: #E04C40;
+}
+
+.icon-telegram {
+  color: #2CA5E0;
+}

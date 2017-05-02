@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,46 +7,223 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="dist/css/plugins.min.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
 
 <div class="cv__container">
     <section class="cv__content-block cv-section__header">
-        <header class="flexbox cv__row-wrapper">
-            <div class="cv-section-header__photo"><img src="" alt=""></div>
-            <div class="cv-section-header__name">
-                <h1>Solomykin <br>
-                    Konstantin
-                </h1>
+        <header class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">
+                <div class="cv-section-header__author-photo"></div>
+            </div>
+            <div class="cv__col cv-col-content">
+                <h1 class="cv-section-header__author-name">Solomykin Konstantin </h1>
             </div>
         </header>
-        <div class="flexbox cv__row-wrapper">
-            <div class="cv-section-header__contact-info ">
-                <ul class="cv-contact__socials-list flexbox">
-                    <li class="cv-contact__socials-item vk"><a href="">vk.com</a></li>
-                    <li class="cv-contact__socials-item gmail"><a href="">gmail.com</a></li>
-                    <li class="cv-contact__socials-item telegram"><a href="">telegram</a></li>
-                    <li class="cv-contact__socials-item mobile"><a href="">+380 63 289 44 29</a></li>
+        <div class="cv__row-wrapper">
+            <div class="cv__col cv-col-title cv-section-header__contact-info">
+                <ul class="cv-contact__socials-list">
+                    <li class="cv-contact__socials-item vk"><a target="_blank" href="https://vk.com/id5393010"><span class="icon-vk"></span>vk.com/id5393010</a></li>
+                    <li class="cv-contact__socials-item gmail"><a href="mailto:konstantin.odessa.dev@gmail.com"><span class="icon-gmail"></span>konstantin.odessa.dev@gmail.com</a></li>
+                    <li class="cv-contact__socials-item telegram"><a href="tg://resolve?domain:@Equilibrium_Odessa"><span class="icon-telegram"></span>@Equilibrium_Odessa</a></li>
+                    <li class="cv-contact__socials-item mobile"><a href="tel:+380632894429"><span class="icon-phone"></span>063 289 44 29</a></li>
                 </ul>
             </div>
-            <div class="cv-section-header__title-about">
+            <div class="cv__col cv-col-content cv-section-header__title-about">
                 <p class="position">frontend developer</p>
                 <p class="form-type">CV application</p>
             </div>
         </div>
     </section>
     <section class="cv__content-block cv-section__about-me">
-        <header class="cv-section-title">
-            <h1>About me</h1>
+        <header class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">
+                <div class="cv__delimiter"></div>
+            </div>
+            <div class="cv__col cv-col-content flexbox flex-items-center">
+                <h1 class="cv-section-title ">About me</h1>
+                <div class="cv__delimiter"></div>
+            </div>
         </header>
-
+    </section>
+    <section class="cv__content-block cv-section__education">
+        <header class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">
+                <div class="cv__delimiter"></div>
+            </div>
+            <div class="cv__col cv-col-content flexbox flex-items-center">
+                <h1 class="cv-section-title">Education</h1>
+                <div class="cv__delimiter"></div>
+            </div>
+        </header>
+        <div class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">ONPU</div>
+            <div class="cv__col cv-col-content">(2005 – 2010) Odessa National Polytechnic University,
+                Institute of Computer Systems
+            </div>
+        </div>
+    </section>
+    <section class="cv__content-block cv-section__skills">
+        <header class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">
+                <div class="cv__delimiter"></div>
+            </div>
+            <div class="cv__col cv-col-content flexbox flex-items-center">
+                <h1 class="cv-section-title">Technical skills</h1>
+                <div class="cv__delimiter"></div>
+            </div>
+        </header>
+        <div class="cv__row-wrapper">
+            <div class="cv__col cv-col-title"></div>
+            <div class="cv__col cv-col-content">
+                <ul class="cv__skills-list">
+                    <li class="cv-skill">
+                        <span class="cv-skill__logo"></span>
+                        <span class="skill__name">HTML(Bootstrap)/CSS(Less/Sass)</span>
+                    </li>
+                    <li class="cv-skill">
+                        <span class="cv-skill__logo"></span>
+                        <span class="skill__name">Javascript/Jquery</span>
+                    </li>
+                    <li class="cv-skill">
+                        <span class="cv-skill__logo"></span>
+                        <span class="skill__name">AngularJS/Angular 2</span>
+                    </li>
+                    <li class="cv-skill">
+                        <span class="cv-skill__logo"></span>
+                        <span class="skill__name">Gulp</span>
+                    </li>
+                    <li class="cv-skill">
+                        <span class="cv-skill__logo"></span>
+                        <span class="skill__name">Git/Svn</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="cv__content-block cv-section__language">
+        <header class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">
+                <div class="cv__delimiter"></div>
+            </div>
+            <div class="cv__col cv-col-content flexbox flex-items-center">
+                <h1 class="cv-section-title">Language proficiency</h1>
+                <div class="cv__delimiter"></div>
+            </div>
+        </header>
+        <div class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">Russian</div>
+            <div class="cv__col cv-col-content">Native</div>
+        </div>
+        <div class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">English</div>
+            <div class="cv__col cv-col-content">Upper Intermediate</div>
+        </div>
+    </section>
+    <section class="cv__content-block cv-section__experience">
+        <header class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">
+                <div class="cv__delimiter"></div>
+            </div>
+            <div class="cv__col cv-col-content flexbox flex-items-center">
+                <h1 class="cv-section-title">Experience</h1>
+                <div class="cv__delimiter"></div>
+            </div>
+        </header>
+        <div class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">HYS Enterprise <br> (July 2015 - February 2016)</div>
+            <div class="cv__col cv-col-content">hybrid mobile app development (AngularJS/Ionic);</div>
+        </div>
+        <div class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">Triadrix <br> (March 2016 - February 2017)</div>
+            <div class="cv__col cv-col-content">Landing pages creation, online stores frontend development</div>
+        </div>
+        <div class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">Citrus <br> (February 2017 - Present time)</div>
+            <div class="cv__col cv-col-content">Landing pages creation, online store/crm frontend development, code
+                refactoring
+            </div>
+        </div>
+    </section>
+    <section class="cv__content-block cv-section__portfolio">
+        <header class="cv__row-wrapper">
+            <div class="cv__col cv-col-title">
+                <div class="cv__delimiter"></div>
+            </div>
+            <div class="cv__col cv-col-content flexbox flex-items-center">
+                <h1 class="cv-section-title">Portfolio</h1>
+                <div class="cv__delimiter"></div>
+            </div>
+        </header>
+        <div class="cv__row-wrapper cv__portfolio-container">
+            <div class="cv__col ">
+                <ul class="cv-portfolio__page-list">
+                    <li class="cv-portfolio__page-item">
+                        <a href="">Eventra<span class="cv__bullet"></span></a>
+                    </li>
+                    <li class="cv-portfolio__page-item">
+                        <a href="">Ремонтно-строительное управление №1<span class="cv__bullet"></span></a>
+                    </li>
+                    <li class="cv-portfolio__page-item">
+                        <a href="">Искусство скетчинга<span class="cv__bullet"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cv__col ">
+                <div class="cv-portfolio__content-block">
+                    <div class="cv-portfolio__item">
+                        <ul class="cv-portfolio-item__slides-list">
+                            <li class="cv-portfolio-item__slides-item">
+                                <img src="assets/img/eventra_1.PNG" alt="">
+                            </li>
+                            <li class="cv-portfolio-item__slides-item">
+                                <img src="assets/img/eventra_2.PNG" alt="">
+                            </li>
+                            <li class="cv-portfolio-item__slides-item">
+                                <img src="assets/img/eventra_3.PNG" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cv-portfolio__item">
+                        <a href="http://rsu1.com.ua/" target="_blank">
+                            <ul class="cv-portfolio-item__slides-list">
+                                <li class="cv-portfolio-item__slides-item">
+                                    <img src="assets/img/rsu_1.PNG" alt="">
+                                </li>
+                                <li class="cv-portfolio-item__slides-item">
+                                    <img src="assets/img/rsu_2.PNG" alt="">
+                                </li>
+                                <li class="cv-portfolio-item__slides-item">
+                                    <img src="assets/img/rsu_3.PNG" alt="">
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="cv-portfolio__item">
+                        <a href="http://sketching.bryukhanova.com/" target="_blank">
+                            <ul class="cv-portfolio-item__slides-list">
+                                <li class="cv-portfolio-item__slides-item">
+                                    <img src="assets/img/sketch_1.PNG" alt="">
+                                </li>
+                                <li class="cv-portfolio-item__slides-item">
+                                    <img src="assets/img/sketch_2.PNG" alt="">
+                                </li>
+                                <li class="cv-portfolio-item__slides-item">
+                                    <img src="assets/img/sketch_3.PNG" alt="">
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="dist/js/app.min.js"></script>
 
 </body>
 </html>

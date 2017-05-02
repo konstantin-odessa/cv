@@ -1,0 +1,81 @@
+/* header section */
+
+.cv-section-header__author-name {
+  color: $color-title;
+  font-size: 30px;
+}
+
+.cv-section-header__author-photo {
+  @include radius;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  background: url("../../../assets/img/avatar.jpg") no-repeat;
+  background-size: 195px;
+  background-position: -68px center;
+}
+
+.cv-contact__socials-list {
+  padding-left: 0;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.cv-contact__socials-item {
+  list-style: none;
+  border-bottom: 1px solid rgba($color-title, 0.43);
+  margin-bottom: 5px;
+  [class^="icon-"] {
+    margin-right: 5px;
+    &:before {
+      font-size: 1.4em;
+    }
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.71);
+    text-decoration: none;
+  }
+}
+
+/* portfolio */
+
+.cv__portfolio-container {
+
+}
+
+.cv-portfolio-item__slides-list {
+  padding-left: 0;
+  height: 300px;
+}
+
+.cv-portfolio-item__slides-item {
+  //max-width: 600px;
+  img {
+    max-width: 100%;
+  }
+}
+
+.cv-portfolio__page-list {
+  padding-left: 0;
+}
+
+.cv-portfolio__page-item {
+  border-bottom: 1px solid rgba(9, 151, 120, 0.6);
+  margin-bottom: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  list-style: none;
+  &.active {
+    a {
+      color: $color-title;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-weight: 500;
+  }
+}

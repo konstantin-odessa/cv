@@ -1,30 +1,50 @@
 /* header section */
 
+.cv-section-header__title-about {
+  font-size: 20px;
+  .position {
+    float: left;
+  }
+  .form-type {
+    float: right;
+  }
+}
+
 .cv-section-header__author-name {
-  color: $color-title;
-  font-size: 30px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.80);
+}
+
+.cv_position {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.80);
+}
+
+.cv-section-header__contact-info {
+  margin-top: 50px;
 }
 
 .cv-section-header__author-photo {
   @include radius;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background: url("../../../assets/img/avatar.jpg") no-repeat;
-  background-size: 195px;
+  background-size: 300px;
   background-position: -68px center;
 }
 
 .cv-contact__socials-list {
   padding-left: 0;
-  font-size: 11px;
   font-weight: 500;
 }
 
 .cv-contact__socials-item {
   list-style: none;
-  border-bottom: 1px solid rgba($color-title, 0.43);
   margin-bottom: 5px;
   [class^="icon-"] {
     margin-right: 5px;
@@ -35,23 +55,42 @@
 
   a {
     color: rgba(0, 0, 0, 0.71);
-    text-decoration: none;
+  }
+}
+
+/* technical skills */
+
+.cv__skills-list {
+  padding-left: 10px;
+  margin: 0;
+}
+
+.cv-skill {
+  list-style: none;
+  padding: 10px 0;
+  &:before {
+    content: '—';
+    margin-right: 10px;
+    float: left;
   }
 }
 
 /* portfolio */
 
 .cv__portfolio-container {
-
+  justify-content: center;
+  align-items: center;
+  @include breakpoint(max-width 875px) {
+    flex-direction: column;
+  }
 }
 
 .cv-portfolio-item__slides-list {
   padding-left: 0;
-  height: 300px;
+  height: 360px;
 }
 
 .cv-portfolio-item__slides-item {
-  //max-width: 600px;
   img {
     max-width: 100%;
   }
@@ -59,23 +98,66 @@
 
 .cv-portfolio__page-list {
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @include breakpoint(max-width 875px) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 
 .cv-portfolio__page-item {
-  border-bottom: 1px solid rgba(9, 151, 120, 0.6);
   margin-bottom: 5px;
   padding-top: 3px;
   padding-bottom: 3px;
   list-style: none;
   &.active {
     a {
-      color: $color-title;
+      color: darken($color-title, 10%);
+    }
+    .cv__bullet {
+      &:after {
+        opacity: 1;
+        transform: scale(1);
+        background-color: rgba(152, 111, 0, 0.88);
+      }
+
     }
   }
   a {
     text-decoration: none;
     color: #000;
-    font-size: 11px;
+    //font-size: 11px;
     font-weight: 500;
+  }
+  .cv__bullet {
+    position: relative;
+    @include radius;
+    border: 3px solid $color-title;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    &:after {
+      @include radius;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 7px;
+      height: 7px;
+      opacity: 0;
+      transform: scale(0);
+      transition: all .3s ease-in-out;
+      background-color: $color-title;
+      content: '';
+    }
+  }
+  @include breakpoint(max-width 875px) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 }

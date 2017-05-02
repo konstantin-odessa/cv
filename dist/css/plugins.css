@@ -1,3 +1,4 @@
+/* Plugins */
 .slider__container {
   margin-left: auto;
   margin-right: auto;
@@ -14,8 +15,7 @@
 
 .fade__content-container {
   position: relative;
-  overflow: hidden;
-  /* width: 600px; */ }
+  overflow: hidden; }
 
 .fade__content-item {
   position: absolute;

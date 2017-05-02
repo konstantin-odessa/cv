@@ -52,7 +52,7 @@
   position: relative;
   height: 100%;
   display: inline-block;
-  &:after {
+  &:after, &:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -61,22 +61,25 @@
     //border-bottom: 1px solid white;
     //border-top: 1px solid rgba(0, 0, 0, 0.39);
     width: 9999px;
-    background-color: rgba(0, 0, 0, 0.39);;
+    //background-color: rgba(0, 0, 0, 0.39);;
+    background-color: rgba(darken($color-title, 10%), 0.2);
   }
-  //&:before {
-  //  right: 100%;
-  //  margin-right: 15px;
-  //}
+  &:before {
+    right: 100%;
+    margin-right: $gutter-size;
+  }
   &:after {
     left: 100%;
-    //margin-left: 15px;
+    margin-left: $gutter-size;
   }
 }
 
 @mixin delimiter() {
   height: 1px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.39);
+  background-color: rgba(darken($color-title, 10%), 0.2);
+  //background-color: rgba($color-title, 0.2);
+  //background-color: rgba(0, 0, 0, 0.39);
   @include breakpoint(max-width $mobile) {
     display: none;
   }

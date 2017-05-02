@@ -78,11 +78,10 @@ var Slider = function () {
         key: 'goToSlide',
         value: function goToSlide(event) {
             event.preventDefault();
-            var link = $(event.target).parents('[data-slider-target]'),
+            var link = $(event.target).closest('[data-slider-target]'),
                 id = link.attr('data-slider-target'),
                 slide = $('[data-slider-id="' + id + '"]');
             this.slidePos = slide.index();
-            console.log(link);
             if (link.hasClass(this.settings.activeClass)) {
                 return;
             }

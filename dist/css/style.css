@@ -587,7 +587,7 @@ p {
   margin-right: auto;
   width: 200px;
   height: 200px;
-  background: url("../../../assets/img/avatar.jpg") no-repeat;
+  background: url("../../assets/img/avatar.jpg") no-repeat;
   background-size: 300px;
   background-position: -68px center; }
 

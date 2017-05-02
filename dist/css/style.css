@@ -487,8 +487,10 @@ p {
     .cv__row-wrapper {
       -ms-flex-direction: column;
           flex-direction: column; }
-      .cv__row-wrapper:not(.cv-section-title__container) .cv-col-title {
-        margin-bottom: 10px; }
+      .cv__row-wrapper:not(.cv-section-title__container) {
+        display: block; }
+        .cv__row-wrapper:not(.cv-section-title__container) .cv-col-title {
+          margin-bottom: 10px; }
       .cv__row-wrapper.cv-section-title__container {
         -ms-flex-pack: center;
             justify-content: center; }
@@ -531,7 +533,6 @@ p {
   @media (max-width: 640px) {
     .cv-section-title {
       position: relative;
-      height: 100%;
       display: inline-block;
       margin-right: 0;
       white-space: normal; }

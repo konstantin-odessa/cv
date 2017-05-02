@@ -48,6 +48,7 @@ p {
   @include breakpoint(max-width $mobile) {
     flex-direction: column;
     &:not(.cv-section-title__container) {
+      display: block;
       .cv-col-title {
         margin-bottom: 10px;
       }

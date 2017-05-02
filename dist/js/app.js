@@ -36,7 +36,8 @@ var Slider = function () {
             containerMaxWidth: 600,
             speed: 400
         };
-        this.settings = Object.assign({}, this.defaults, opts);
+        this.settings = $.extend({}, this, this.defaults, opts);
+        // this.settings = Object.assign({}, this.defaults, opts);
         this.navMenu = $(this.settings.navMenu);
         this.content = $(this.settings.content);
         this.length = this.navMenu.length;

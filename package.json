@@ -1,0 +1,43 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "\"# cv\" \r This is my CV",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "breakpoint-sass": "^2.7.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rollup": "^2.11.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "rollup-plugin-babel": "^2.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "icomoon-icons": "node_modules/.bin/icomoon-build -p icomoon.json --scss src/sass/icomoon/icomoon-icons.scss --fonts assets/fonts/icomoon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konstantin-odessa/cv.git"
+  },
+  "author": "Konstantin Solomykin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konstantin-odessa/cv/issues"
+  },
+  "homepage": "https://github.com/konstantin-odessa/cv#readme"
+}

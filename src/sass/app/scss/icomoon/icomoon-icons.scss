@@ -1,0 +1,13 @@
+// Script-generated file, do not modify by hand
+
+$icon-phone-content: "\e942";
+$icon-gmail-content: "\ea88";
+$icon-telegram-content: "\ea95";
+$icon-vk-content: "\e900";
+
+@mixin icon-classes {
+    .icon-phone:before { content: $icon-phone-content; }
+    .icon-gmail:before { content: $icon-gmail-content; }
+    .icon-telegram:before { content: $icon-telegram-content; }
+    .icon-vk:before { content: $icon-vk-content; }
+}
